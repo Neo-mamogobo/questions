@@ -20,12 +20,15 @@ let score = 0;
 const buttons = document.querySelectorAll(`.option`)
 buttons.forEach(button => {button.addEventListener(`click`, () => {
     if (button.textContent === `Paris`){
-        score++
-    document.getElementById(`score`).textContent = score; 
-    } })
+        score++ 
+    }else{
+        score--
+        document.getElementById(`score`).textContent = score;
+    })
     
 });
     
+
 
 
 
