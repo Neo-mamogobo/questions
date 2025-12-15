@@ -24,10 +24,11 @@ buttons.forEach(button => {button.addEventListener(`click`, () => {
     }else{
         score--
         document.getElementById(`score`).textContent = score;
-    })
+    }})
     
 });
     
+
 
 
 
