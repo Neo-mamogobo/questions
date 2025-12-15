@@ -21,6 +21,7 @@ const buttons = document.querySelectorAll(`.option`)
 buttons.forEach(button => {button.addEventListener(`click`, () => {
     if (button.textContent === `Paris`){
         score++ 
+        document.getElementById(`score`).textContent = score;
     }else{
         score--
         document.getElementById(`score`).textContent = score;
@@ -31,6 +32,8 @@ buttons.forEach(button => {button.addEventListener(`click`, () => {
 
 
 
+
+    
 
 
 
